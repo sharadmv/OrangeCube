@@ -1,14 +1,18 @@
 #!/usr/local/bin/node
-var sys = require('sys');
 var sp = require('serialport');
 var SerialPort = sp.SerialPort;
 var spawn = require('child_process').spawn;
 var Sensor = function(port,num,onData,onStartTouch, onEndTouch){
+  var started = false;
   var touch = new Array(num);
   var serialPort = new SerialPort(port,{
       parser:sp.parsers.readline('\n')
   });
   serialPort.on('data',function(data){
+    if (!started) {
+      console.log("Started listening on serial port: "+port+", "+num+" sensors");
+      started = true;
+    }
     var temp = data.toString('ascii').trim().match(/[0-9]+/g);
     if (temp){
       for (var i in temp) {

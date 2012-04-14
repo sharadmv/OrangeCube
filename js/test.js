@@ -4,7 +4,8 @@ spawn = require('child_process').spawn;
 var x =  1300; var y = 700;
 var mouse = {
   move:function(x,y){
-    spawn('./mouse.py',[x,y]);
+    var mouse = spawn('./mouse.py',[x,y]);
+    mouse.stdout.on('data',function(data){console.log(data.toString('ascii'))});
   }
 }
 var curX = 101,curY = 101;

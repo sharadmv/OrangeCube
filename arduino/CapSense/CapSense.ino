@@ -18,8 +18,7 @@ void loop()
     //int val = Serial.read();
     //Serial.println(val);
   
-    Serial.print(millis() - start);        // check on performance in milliseconds
-    Serial.print("\t");                    // tab character for debug windown spacing
+    // tab character for debug windown spacing
     //analogWrite(outLED, (total1)/1000);
   
     Serial.println(total1);                  // print sensor output 1

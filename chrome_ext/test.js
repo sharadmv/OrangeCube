@@ -1,10 +1,10 @@
 var bridge = new Bridge( {host: "cloud2.flotype.com", port: 8091, apiKey: "abcdefgh"});
 bridge.connect();
 
-$("body").append("<div style='width: 100%;height: 100%; position: absolute; top: 0; left: 0;'id='orange-frame'></div>");
+$("body").append("<div style='width: 100%;height: 100%; position: fixed; z-index:100!important; top: 0; left: 0;'id='orange-frame'></div>");
 for(var x = 0; x < 9; x++) {
   var color = "rgba(" + Math.floor(Math.random() * 255 )+ ", " + Math.floor(Math.random() * 255) + ", " + Math.floor(Math.random() * 255) + ", .4)";
-  $("#orange-frame").append("<div style='background-color: "+color+"; width: 33.3333333333333%; height: 33.33333333333%; float: left;' class='frame-ninth' id='frame"+x+"'></div>");
+  $("#orange-frame").append("<div style='z-index:100!important; position:relative; background-color: "+color+"; width: 33.3333333333333%; height: 33.33333333333%; float: left;' class='frame-ninth' id='frame"+x+"'></div>");
 }
 
 var left = 0;

@@ -121,4 +121,5 @@ var remoteFuncs = {
 
 bridge.ready(function() {
   bridge.publishService("log", remoteFuncs);
+  console.log("HI");
 });

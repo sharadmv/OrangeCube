@@ -10,7 +10,7 @@
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["jquery.js", "test.js"]
+      "js": ["jquery.js", "bridge.min.js", "test.js"]
     }
   ],
   "browser_action": {

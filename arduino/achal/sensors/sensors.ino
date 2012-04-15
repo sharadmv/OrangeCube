@@ -39,8 +39,17 @@ void loop()
     //Serial.print(millis() - start);        // check on performance in milliseconds
     //Serial.print("\t");                    // tab character for debug windown spacing
     //analogWrite(outLED, (total1)/1000);
-  
-    Serial.println(total1 + "\t" + total2 + "\t" + total3 + "\t" + total4 + "\t" + total5);                  // print sensor output 
+    
+    Serial.print(total1);
+    Serial.print("\t");
+    Serial.print(total2);
+    Serial.print("\t");
+    Serial.print(total3);
+    Serial.print("\t");
+    Serial.print(total4);
+    Serial.print("\t");
+    Serial.print(total5);
+    Serial.println("\t");
     //if(total1>200){
       //digitalWrite(outLED, HIGH);
     //}

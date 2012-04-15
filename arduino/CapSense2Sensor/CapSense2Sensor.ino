@@ -32,5 +32,5 @@ void loop()
       //digitalWrite(outLED, HIGH);
     //}
 
-    delay(10);                             // arbitrary delay to limit data to serial port 
+    delay(5);                             // arbitrary delay to limit data to serial port 
 }

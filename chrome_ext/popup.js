@@ -35,3 +35,13 @@ function constructImageURL(photo) {
       "_" + photo.getAttribute("secret") +
       "_s.jpg";
 }
+
+var openTab = function() {
+  chrome.tabs.create({});
+};
+
+
+
+var funcs = {
+  openTab: openTab
+};

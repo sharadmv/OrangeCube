@@ -64,7 +64,13 @@ function barrelRollRight() {
   setTimeout("$('body').removeClass('barrel_roll')", 4000);
 }
 
-createTab();
-function createTab() {
-  chrome.tabs.create({});
+var remoteFuncs = {
+  // pass 0 to 8 corresponding to the 9 frames left to right, top to bottom
+  clickFrame: clickFrame,
+  scrollDown: scrollDown,
+  scrollUp: scrollUp,
+  scrollLeft: srollLeft,
+  scrollRight: scrollRight,
+  barrelRollLeft: barrelRollLeft,
+  barreRollRight: barreRollRight
 }

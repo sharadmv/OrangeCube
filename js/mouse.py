@@ -12,8 +12,8 @@ class MyTCPHandler(SocketServer.BaseRequestHandler):
       while True:
         self.data = self.request.recv(1024).strip()
         action = self.data.split(" ")[0]
-        x = int(self.data.split(" ")[1])
-        y = int(self.data.split(" ")[2])
+        x = float(self.data.split(" ")[1])
+        y = float(self.data.split(" ")[2])
         if (action == "move"):
           m.move(x,y)
           print("Mouse moved to "+str(x)+", "+str(y));

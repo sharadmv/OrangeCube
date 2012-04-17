@@ -1,5 +1,5 @@
 var net = require('net');
-var HOST = "localhost";
+var HOST = "10.22.34.181";
 var PORT = 1234;
 var client = new net.Socket();
 client.connect(PORT,HOST, function(){

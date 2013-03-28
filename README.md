@@ -11,5 +11,5 @@ Examples include:
   * Making a roll motion over the left, top, right sides to make the browser do a barell roll
   * Motioning the hand up the front face to return to the desktop, or open up command prompt, etc.
   * Switching workspaces with a swipe past the left or right faces
-  * Launch Word, Chrome, and play music to prepare your essay writing setup with a brush of the hand over the cube
+  * Launch Word, Chrome, and play music all at once to prepare your essay writing setup with a brush of the hand over the cube
   * Any combination of applications to launch, close, control, with a single motion
